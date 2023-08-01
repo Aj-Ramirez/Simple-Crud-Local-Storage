@@ -1,0 +1,80 @@
+*{
+     color: #343434;
+}
+
+body{
+     background: rgb(229, 242, 250);
+     
+}
+
+button{
+     border: unset;
+     background-color: unset;
+}
+.fa-trash{
+     color: #C03D29;
+     transition: 0.3s ease;
+     margin-left: 10px;
+}
+.fa-edit{
+     color: #fbc100;
+     transition: 0.3s ease;
+}
+.fa-search{
+     color: #ffffff;
+     transition: 0.3s ease;
+}
+
+.table {
+     margin-left: auto;
+     margin-right: auto;
+   }
+
+#Update{
+     display: none;
+   }
+
+.container{
+     max-width: 1000px;
+     
+}
+.fa-trash:hover,
+.fa-edit:hover {
+     color:hsl(0, 0%, 73%);
+     transform: translateY(-2px) scale(1.1);
+     
+}
+#Submit, #Search{
+     transition: 0.3s ease;
+}
+button:hover{
+     transform: translateY(1px) scale(0.95);
+}
+
+
+
+.fa-trash::after{
+     content: "Delete";
+     font-size: 15px;
+     position: absolute;
+     top: -25px;
+     left:-50%;
+
+     background-color: #ffe3de !important;
+     padding: 3px;
+     border-radius: 5px;
+     color: #C03D29;
+}
+
+.fa-edit::after{
+     content: "Update";
+     font-size: 15px;
+     position: absolute;
+     top: -25px;
+     left:-50%;
+
+     background-color: #fff7dc !important;
+     padding: 3px;
+     border-radius: 5px;
+     color: #fbc100;
+}
